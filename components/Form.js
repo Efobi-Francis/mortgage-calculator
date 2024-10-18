@@ -378,7 +378,7 @@ export default function Form() {
               Results shown here
             </h1>
             <p className=" text-[hsl(200,26%,54%)] text-center">
-              Complete the form and click "calculate repayments" to see what
+              Complete the form and click <q>calculate repayments</q> to see what
               your monthly repayments would be.
             </p>
           </div>
