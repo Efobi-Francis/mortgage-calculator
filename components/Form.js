@@ -171,7 +171,7 @@ export default function Form() {
                 : `${errorAmount && "bg-red-600 text-white border border-red-600"}`}
               `} 
             >
-              £
+              &pound;
             </Button>
             <TextInput
               type="number"
@@ -248,7 +248,7 @@ export default function Form() {
                   : `${errorRate && "bg-red-600 text-white border border-red-600"}`}
                 `}
               >
-                %
+                &#37;
               </Button>
             </div>
             {errorRate && (
