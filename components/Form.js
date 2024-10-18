@@ -164,7 +164,7 @@ export default function Form() {
           <Label htmlFor="mortgage_amount" className="text-[hsl(200,26%,54%)]">
             Mortgage Amount
           </Label>
-          <div className={`flex `}>
+          <div className="flex">
             <Button 
               className={` w-10 pointer-events-none rounded-e-none bg-[hsl(202,86%,94%)] border-2 border-r-0 border-gray-400 
                 text-[hsl(200,26%,54%)] font-bold transition-none ${isFocusedAmount ? "bg-[hsl(61,70%,52%)] text-[hsl(202,56%,12%)] border-none" 
@@ -180,7 +180,6 @@ export default function Form() {
               onChange={handleFormChange}
               onFocus={handleFocusAmount}
               onBlur={handleBlurAmount}
-              pattern="^[0-9]*$"
               className={` w-full border-2 border-gray-400 border-l-0 rounded-r-lg 
                 ${errorAmount && " border-2 border-red-600"} ${isFocusedAmount && " border-0"}`}
               theme={customThemeMortgageAmount}
@@ -357,7 +356,7 @@ export default function Form() {
               {/* divider */}
               <div className=" my-4 lg:my-8 h-[1px] bg-slate-700"></div>
               <p className=" my-2 text-[hsl(200,26%,54%)]">
-                Total you'll repay over the term
+                Total you&apos;ll repay over the term
               </p>
               <p className=" text-xl">
                 <span>&pound;</span>
