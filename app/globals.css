@@ -2,32 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Chrome, Safari, Edge, Opera */
+@layer base {
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: 'PlusJakartaSans' ;
+  src: url('../public/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf'),
+       url('../public/assets/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf');
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+/* input{
+  padding-left: 14px;
+  padding-right: 14px;
+  font-weight: 700;
+} */
+
+/* input:focus {
+  outline: 2px solid salmon;
+  background-color: chocolate;
 }
+
+.kil{
+  background-color: blue;
+} */
